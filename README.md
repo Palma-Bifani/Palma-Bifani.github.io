@@ -1,10 +1,11 @@
-# Palma-Bifani.github.io
+# Astrophysicist 
 
-Astrophysisist 
+#### Investigating exoplanetary atmospheres
 
-Exoplanets Atmospheres
+## Education
+- Ph.D., Astronomy | Université Côte d'Azur
+- M.Sc., Astronomy | Universidad de Chile (_December 2019_)
+- B.S., Astronomy | Universidad de Chile (_December 2019_)
 
-# education
-- suizo
-- uchile
-- cote d'azur
+
+
