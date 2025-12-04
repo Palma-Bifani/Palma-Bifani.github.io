@@ -3,9 +3,11 @@
 #### Investigating exoplanetary atmospheres
 
 ## Education
-- Ph.D., Astronomy | Université Côte d'Azur
-- M.Sc., Astronomy | Universidad de Chile (_December 2019_)
+
+- Ph.D., Astronomy | Université Côte d'Azur (_March 2025_)
+- M.Sc., Astronomy | Universidad de Chile (_January 2022_)
 - B.S., Astronomy | Universidad de Chile (_December 2019_)
+
 
 ## Projects
 
