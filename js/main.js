@@ -40,11 +40,28 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo(0, 0);
     };
 
+    // Hamburger Menu Logic
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            hamburger.classList.toggle('active');
+        });
+    }
+
     // Event Listeners for Nav
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             const tabName = item.dataset.tab;
             window.switchTab(tabName);
+
+            // Close mobile menu after selection
+            if (navLinks && navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show');
+                hamburger.classList.remove('active');
+            }
         });
     });
 
