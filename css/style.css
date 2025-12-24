@@ -392,15 +392,25 @@ a:hover {
     }
 
     .hero-content h1 {
-        font-size: 1.25rem !important;
+        font-size: 1.15rem !important;
         margin-top: 10px;
-        letter-spacing: -0.01em;
+        margin-bottom: 5px;
+        color: #002266 !important;
+        /* Solid color to avoid background-clip issues */
+        -webkit-text-fill-color: #002266 !important;
+        background: none !important;
+        -webkit-background-clip: border-box !important;
+        background-clip: border-box !important;
         white-space: normal;
+        overflow: visible !important;
+        text-align: center;
         line-height: 1.2;
     }
 
     .hero-content p.subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-top: 5px;
+        text-align: center;
     }
 
     .hero-icon {
