@@ -22,11 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Bug Fix: Re-initialize CV embed to ensure visibility after display:none
                 if (tabName === 'cv') {
-                    const embed = section.querySelector('embed');
+                    const pdfContainer = section.querySelector('.pdf-container');
+                    const embed = pdfContainer ? pdfContainer.querySelector('embed') : null;
                     if (embed) {
-                        const currentSrc = embed.src;
-                        embed.src = '';
-                        embed.src = currentSrc;
+                        const newEmbed = embed.cloneNode(true);
+                        pdfContainer.removeChild(embed);
+                        setTimeout(() => {
+                            pdfContainer.appendChild(newEmbed);
+                        }, 50);
                     }
                 }
             } else {
