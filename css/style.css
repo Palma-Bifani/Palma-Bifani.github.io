@@ -392,12 +392,25 @@ a:hover {
     }
 
     .hero-content h1 {
-        font-size: 1.6rem !important;
+        font-size: clamp(1.2rem, 8vw, 1.8rem) !important;
         margin-top: 10px;
+        letter-spacing: -0.02em;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        white-space: nowrap;
+        /* Force it to stay on one line on most phones, if it overflows it will scale down due to vw/clamp or we can allow break */
+    }
+
+    /* On extremely narrow screens, allow wrap if still too big */
+    @media (max-width: 350px) {
+        .hero-content h1 {
+            white-space: normal;
+            font-size: 1.2rem !important;
+        }
     }
 
     .hero-content p.subtitle {
-        font-size: 1.1rem;
+        font-size: clamp(0.9rem, 4.5vw, 1.1rem);
     }
 
     .hero-icon {
