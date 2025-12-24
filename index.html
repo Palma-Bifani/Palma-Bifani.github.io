@@ -97,8 +97,9 @@
 
         <!-- HOME -->
         <section id="home" class="tab-content active-tab">
-            <div class="hero">
-                <div class="hero-content">
+            <div class="hero"
+                style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 0 14% 0 30%;">
+                <div class="hero-content" style="flex: 1; text-align: left;">
                     <h1>Astrophysicist</h1>
                     <p class="subtitle">Investigating Exoplanetary Atmospheres</p>
                     <div class="hero-actions">
@@ -106,16 +107,20 @@
                         <button class="btn-secondary" onclick="switchTab('cv')">View CV</button>
                     </div>
                 </div>
+                <div class="hero-icon" style="flex: 0 0 350px;">
+                    <img src="assets/img/icon.jpeg" alt="Paulina Palma Bifani"
+                        style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 4px solid white;">
+                </div>
             </div>
         </section>
 
         <!-- CV -->
-        <section id="cv" class="tab-content">
-            <div class="container" style="padding: 20px;">
-                <h2>Curriculum Vitae</h2>
-                <div class="pdf-container">
-                    <p class="placeholder-text">PDF Viewer Loading...</p>
-                    <iframe src="" class="pdf-frame" title="CV"></iframe>
+        <section id="cv" class="tab-content" style="padding: 40px 0; text-align: center;">
+            <div class="container wide" style="width: 100%; max-width: 1200px; margin: 0 auto;">
+                <h2 style="margin-bottom: 30px; text-align: left; padding-left: 100px;">Curriculum Vitae</h2>
+                <div class="pdf-container"
+                    style="height: auto; border: none; background: transparent; overflow: visible;">
+                    <embed src="files/CV.pdf" width="1000px" height="2100px" type="application/pdf">
                 </div>
             </div>
         </section>
@@ -264,29 +269,39 @@
                          Let's put "Dreaming..." as a section header and the sub-items as specific blocks.
                     -->
                     <div id="blog-dreaming" class="research-section">
-                        <section-header>Dreaming 'bout summer 2025</section-header>
-                        
+                        <h3>Dreaming 'bout summer 2025</h3>
+
                         <div id="blog-respirar" style="margin-top: 20px;">
                             <h4>Respirar</h4>
-                            <!-- Use a grid for 3 images side by side -->
-                            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px;">
-                                <div class="gallery-img-container" style="height: 200px; overflow: hidden; border-radius: 8px;">
-                                    <img src="assets/img/respirar_mar.jpg" alt="Respirar Mar" style="width: 100%; height: 100%; object-fit: cover;">
+                            <!-- Use a grid for 3 images side by side, rotated anti-clockwise -->
+                            <div class="gallery-grid"
+                                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 25px;">
+                                <div class="gallery-img-container"
+                                    style="aspect-ratio: 2/3; overflow: hidden; border-radius: 8px; background: #eee;">
+                                    <img src="assets/img/respirar_mar.jpg" alt="Respirar Mar"
+                                        style="width: 100%; height: 100%; object-fit: cover; transform: rotate(-90deg) scale(1.5);">
                                 </div>
-                                <div class="gallery-img-container" style="height: 200px; overflow: hidden; border-radius: 8px;">
-                                    <img src="assets/img/respirar_nubes.jpg" alt="Respirar Nubes" style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="gallery-img-container"
+                                    style="aspect-ratio: 2/3; overflow: hidden; border-radius: 8px; background: #eee;">
+                                    <img src="assets/img/respirar_nubes.jpg" alt="Respirar Nubes"
+                                        style="width: 100%; height: 100%; object-fit: cover; transform: rotate(-90deg) scale(1.5);">
                                 </div>
-                                <div class="gallery-img-container" style="height: 200px; overflow: hidden; border-radius: 8px;">
-                                    <img src="assets/img/respirar_rosas.jpg" alt="Respirar Rosas" style="width: 100%; height: 100%; object-fit: cover;">
+                                <div class="gallery-img-container"
+                                    style="aspect-ratio: 2/3; overflow: hidden; border-radius: 8px; background: #eee;">
+                                    <img src="assets/img/respirar_rosas.jpg" alt="Respirar Rosas"
+                                        style="width: 100%; height: 100%; object-fit: cover; transform: rotate(-90deg) scale(1.5);">
                                 </div>
                             </div>
-                            <p style="margin-top: 10px;">A collection of moments.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #555; text-align: center;">
+                                "In a world that does not stop moving, we need to remember how to slow down and breath"
+                            </p>
                         </div>
 
                         <div id="blog-vortex" style="margin-top: 40px;">
                             <h4>Mega Vortex</h4>
                             <div style="margin-top: 15px; border-radius: 8px; overflow: hidden;">
-                                <img src="assets/img/mega_vortex.jpg" alt="Mega Vortex" style="width: 100%; max-height: 400px; object-fit: cover;">
+                                <img src="assets/img/mega_vortex.jpg" alt="Mega Vortex"
+                                    style="width: 100%; max-height: 400px; object-fit: cover;">
                             </div>
                             <p style="margin-top: 10px;">Exploration of the vortex.</p>
                         </div>
