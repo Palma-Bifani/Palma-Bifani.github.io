@@ -198,25 +198,22 @@ a:hover {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    margin: 0 10px;
 }
 
-.btn-primary {
-    background: var(--accent-color);
-    color: var(--bg-color);
-    font-weight: 600;
-}
-
+.btn-primary,
 .btn-secondary {
-    background: transparent;
-    border: 1px solid var(--accent-color);
+    background: #ffffff;
     color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-weight: 600;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
+    background: var(--accent-color);
+    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(191, 155, 48, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 68, 204, 0.2);
 }
 
 /* Research Layout (Sidebar + Content) */
@@ -240,14 +237,14 @@ a:hover {
 .research-sidebar li {
     padding: 10px 0;
     cursor: pointer;
-    border-bottom: 1px solid transparent;
+    color: #1a1a1a;
+    /* Black by default */
     transition: color 0.3s;
 }
 
 .research-sidebar li:hover,
 .research-sidebar li.active-sub {
     color: var(--accent-color);
-    border-bottom-color: var(--accent-color);
 }
 
 .scrollable-area {

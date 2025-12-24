@@ -19,6 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             if (section.id === tabName) {
                 section.classList.add('active-tab');
+
+                // Bug Fix: Re-initialize CV embed to ensure visibility after display:none
+                if (tabName === 'cv') {
+                    const embed = section.querySelector('embed');
+                    if (embed) {
+                        const currentSrc = embed.src;
+                        embed.src = '';
+                        embed.src = currentSrc;
+                    }
+                }
             } else {
                 section.classList.remove('active-tab');
             }
@@ -40,6 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    // Generic Scroll to Top for sidebars
+    window.scrollToTop = () => {
+        const activeTab = document.querySelector('.tab-content.active-tab');
+        if (activeTab) {
+            const scrollArea = activeTab.querySelector('.scrollable-area');
+            if (scrollArea) {
+                scrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+            }
         }
     };
 

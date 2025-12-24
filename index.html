@@ -83,9 +83,9 @@
             <li data-tab="cv">CV</li>
             <li data-tab="research">Research</li>
             <li data-tab="publications">Publications</li>
-            <li data-tab="communicating">Communicating</li>
+            <li data-tab="scientific-blog">Scientific Blog</li>
             <li data-tab="blog">Artistic Blog</li>
-            <li data-tab="contact">Contact me</li>
+            <li data-tab="contact">Contact</li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
@@ -99,12 +99,16 @@
         <section id="home" class="tab-content active-tab">
             <div class="hero"
                 style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 0 14% 0 30%;">
-                <div class="hero-content" style="flex: 1; text-align: left;">
+                <div class="hero-content" style="flex: 1; text-align: center;">
                     <h1>Astrophysicist</h1>
                     <p class="subtitle">Investigating Exoplanetary Atmospheres</p>
-                    <div class="hero-actions">
-                        <button class="btn-primary" onclick="switchTab('research')">Explore Research</button>
-                        <button class="btn-secondary" onclick="switchTab('cv')">View CV</button>
+                    <div class="cta-buttons"
+                        style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 25px; justify-content: center;">
+                        <button class="btn-primary" onclick="switchTab('cv')">CV</button>
+                        <button class="btn-secondary" onclick="switchTab('research')">Research</button>
+                        <button class="btn-secondary" onclick="switchTab('publications')">Publications</button>
+                        <button class="btn-secondary" onclick="switchTab('scientific-blog')">Scientific Blog</button>
+                        <button class="btn-secondary" onclick="switchTab('blog')">Artistic Blog</button>
                     </div>
                 </div>
                 <div class="hero-icon" style="flex: 0 0 350px;">
@@ -129,9 +133,11 @@
         <section id="research" class="tab-content">
             <div class="research-layout">
                 <aside class="research-sidebar">
+                    <h4 style="margin-bottom:15px; color:var(--accent-color); cursor: pointer;" onclick="scrollToTop()">
+                        Research</h4>
+                    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
                     <ul>
                         <li class="active-sub" onclick="scrollToSub('res-overview')">Overview</li>
-                        <li onclick="scrollToSub('res-thesis')">PhD Thesis</li>
                         <li onclick="scrollToSub('res-diversity')">Diversity of Planets</li>
                         <li onclick="scrollToSub('res-imaging')">Direct Imaging</li>
                         <li onclick="scrollToSub('res-atmos')">Atmospheric Models</li>
@@ -140,39 +146,39 @@
                     </ul>
                 </aside>
                 <div class="research-main scrollable-area">
-                    <div id="res-overview" class="research-section">
-                        <h3>Overview</h3>
-                        <p>Text and image placeholder for research overview.</p>
-                        <div class="placeholder-img">Image</div>
-                    </div>
-                    <div id="res-thesis" class="research-section">
-                        <h3>PhD Thesis</h3>
-                        <p>Link and text placeholder.</p>
-                    </div>
-                    <div id="res-diversity" class="research-section">
-                        <h3>Diversity of Planets</h3>
-                        <div class="placeholder-img">Image</div>
-                        <p>Content...</p>
-                    </div>
-                    <div id="res-imaging" class="research-section">
-                        <h3>Direct Imaging</h3>
-                        <div class="placeholder-img">Image</div>
-                        <p>Content...</p>
-                    </div>
-                    <div id="res-atmos" class="research-section">
-                        <h3>Atmospheric Models</h3>
-                        <div class="placeholder-img">Image</div>
-                        <p>Content...</p>
-                    </div>
-                    <div id="res-systems" class="research-section">
-                        <h3>Planetary Systems</h3>
-                        <div class="placeholder-img">Image</div>
-                        <p>Content...</p>
-                    </div>
-                    <div id="res-formation" class="research-section">
-                        <h3>Formation and Evolution</h3>
-                        <div class="placeholder-img">Image</div>
-                        <p>Content...</p>
+                    <div id="res-top" class="research-section">
+                        <h3>Research</h3>
+
+                        <div id="res-overview" style="margin-top: 20px;">
+                            <h4>Overview</h4>
+                            <p>Text and image placeholder for research overview.</p>
+                            <div class="placeholder-img">Image</div>
+                        </div>
+                        <div id="res-diversity" style="margin-top: 60px;">
+                            <h4>Diversity of Planets</h4>
+                            <div class="placeholder-img">Image</div>
+                            <p>Content...</p>
+                        </div>
+                        <div id="res-imaging" style="margin-top: 60px;">
+                            <h4>Direct Imaging</h4>
+                            <div class="placeholder-img">Image</div>
+                            <p>Content...</p>
+                        </div>
+                        <div id="res-atmos" style="margin-top: 60px;">
+                            <h4>Atmospheric Models</h4>
+                            <div class="placeholder-img">Image</div>
+                            <p>Content...</p>
+                        </div>
+                        <div id="res-systems" style="margin-top: 60px;">
+                            <h4>Planetary Systems</h4>
+                            <div class="placeholder-img">Image</div>
+                            <p>Content...</p>
+                        </div>
+                        <div id="res-formation" style="margin-top: 60px;">
+                            <h4>Formation and Evolution</h4>
+                            <div class="placeholder-img">Image</div>
+                            <p>Content...</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,66 +188,96 @@
         <section id="publications" class="tab-content">
             <div class="research-layout">
                 <aside class="research-sidebar">
+                    <h4 style="margin-bottom:15px; color:var(--accent-color); cursor: pointer;" onclick="scrollToTop()">
+                        Publications</h4>
+                    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
                     <ul>
-                        <li style="font-weight: 700; color: var(--accent-color); cursor: default; border-bottom: none;">
-                            Publications</li>
-                        <li class="active-sub" onclick="scrollToSub('pub-2025')">2025 (SINFONI)</li>
-                        <li onclick="scrollToSub('pub-2024')">2024 (AF Lep)</li>
-                        <li onclick="scrollToSub('pub-2023')">2023 (AB Pic)</li>
+                        <li class="active-sub" onclick="scrollToSub('pub-thesis')">PhD Thesis (2025)</li>
+                        <li onclick="scrollToSub('pub-2025')">Palma-Bifani et al. (2025)</li>
+                        <li onclick="scrollToSub('pub-2024')">Palma-Bifani et al. (2024)</li>
+                        <li onclick="scrollToSub('pub-2023')">Palma-Bifani et al. (2023)</li>
                     </ul>
                 </aside>
                 <div class="research-main scrollable-area">
-                    <div id="pub-2025" class="research-section">
-                        <h3>SINFONI (2025)</h3>
-                        <div class="pub-grid">
-                            <div class="pub-pdf">
-                                <h4>Presentation Slides</h4>
-                                <div class="placeholder-img" style="height: 200px;">PDF Placeholder</div>
-                            </div>
-                            <div class="pub-info">
-                                <p><a href="#">Link to paper</a></p>
-                                <p>Press review text...</p>
-                                <div class="placeholder-img" style="height: 150px;">Plot Image</div>
-                            </div>
+                    <div id="pub-main" class="research-section">
+                        <h3>Publications</h3>
+                        <p style="margin-top: 10px; font-weight: 600;">Full list of publications at: <a
+                                href="https://ui.adsabs.harvard.edu/public-libraries/aZY9kq11She8riVcy0YJUA"
+                                target="_blank">ADS Library</a></p>
+
+                        <div id="pub-thesis" style="margin-top: 40px;">
+                            <h4>PhD Thesis (2025)</h4>
+                            <p class="placeholder-text">Details coming soon...</p>
                         </div>
-                    </div>
-                    <div id="pub-2024" class="research-section">
-                        <h3>AF Lep (2024)</h3>
-                        <p>Content...</p>
-                    </div>
-                    <div id="pub-2023" class="research-section">
-                        <h3>AB Pic (2023)</h3>
-                        <p>Content...</p>
+
+                        <div id="pub-2025" style="margin-top: 60px;">
+                            <h4>Palma-Bifani et al. (2025)</h4>
+                            <p class="placeholder-text">Details coming soon...</p>
+                        </div>
+
+                        <div id="pub-2024" style="margin-top: 60px;">
+                            <h4>Palma-Bifani et al. (2024)</h4>
+                            <p class="placeholder-text">Details coming soon...</p>
+                        </div>
+
+                        <div id="pub-2023" style="margin-top: 60px;">
+                            <h4>Palma-Bifani et al. (2023)</h4>
+                            <p class="placeholder-text">Details coming soon...</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- COMMUNICATING -->
-        <section id="communicating" class="tab-content">
+        <!-- SCIENTIFIC BLOG -->
+        <section id="scientific-blog" class="tab-content">
             <div class="research-layout">
                 <aside class="research-sidebar">
+                    <h4 style="margin-bottom:15px; color:var(--accent-color); cursor: pointer;" onclick="scrollToTop()">
+                        Scientific Blog</h4>
+                    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
                     <ul>
-                        <li class="active-sub" onclick="scrollToSub('comm-opensource')">Open Source Programming</li>
-                        <li onclick="scrollToSub('comm-git')">GitExpress</li>
-                        <li onclick="scrollToSub('comm-science')">Science & Commit</li>
+                        <li class="active-sub" onclick="scrollToSub('sci-paranal')">Paranal 2024</li>
+                        <li onclick="scrollToSub('sci-latest')">Latest Insights</li>
+                        <li onclick="scrollToSub('sci-methods')">Methods & Tools</li>
                     </ul>
                 </aside>
                 <div class="research-main scrollable-area">
-                    <div id="comm-opensource" class="research-section">
-                        <h3>Open Source Programming</h3>
-                        <p>Description...</p>
-                    </div>
-                    <div id="comm-git" class="research-section">
-                        <h3>GitExpress</h3>
-                        <p><a href="#">Link to GitHub</a></p>
-                        <p>Description...</p>
-                    </div>
-                    <div id="comm-science" class="research-section">
-                        <h3>Science & Commit</h3>
-                        <p><a href="#">Webpage</a> | <a href="#">GitHub</a></p>
-                        <div class="placeholder-img">Image</div>
-                        <p>Description...</p>
+                    <div id="sci-main" class="research-section">
+                        <h3>Scientific Blog</h3>
+
+                        <div id="sci-paranal" style="margin-top: 40px;">
+                            <h4>Paranal 2024</h4>
+                            <p style="margin-bottom: 20px;">Observing with HiRISE at the Very Large Telescope (VLT) in
+                                Paranal, April 2024.</p>
+                            <div class="gallery-grid"
+                                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                                <div style="border-radius: 8px; overflow: hidden; height: 300px;">
+                                    <img src="assets/img/eso_2024_1.jpg" alt="Paranal 1"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; height: 300px;">
+                                    <img src="assets/img/eso_2024_2.jpg" alt="Paranal 2"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="border-radius: 8px; overflow: hidden; height: 300px;">
+                                    <img src="assets/img/eso_2024_3.jpg" alt="Paranal 3"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sci-latest" style="margin-top: 60px;">
+                            <h4>Latest Insights</h4>
+                            <p class="placeholder-text">Coming soon: Deep dives into exoplanet atmosphere
+                                characterization...</p>
+                        </div>
+
+                        <div id="sci-methods" style="margin-top: 60px;">
+                            <h4>Methods & Tools</h4>
+                            <p class="placeholder-text">Updates on retrieval techniques and open-source contributions...
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,25 +287,17 @@
         <section id="blog" class="tab-content">
             <div class="research-layout">
                 <aside class="research-sidebar">
-                    <h4 style="margin-bottom:15px; color:var(--accent-color);">Artistic Blog</h4>
+                    <h4 style="margin-bottom:15px; color:var(--accent-color); cursor: pointer;" onclick="scrollToTop()">
+                        Artistic Blog</h4>
+                    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
                     <ul>
-                        <li class="active-sub" onclick="scrollToSub('blog-respirar')">Dreaming 'bout summer 2025</li>
+                        <li onclick="scrollToSub('blog-respirar')">Respirar</li>
+                        <li onclick="scrollToSub('blog-vortex')">Mega Vortex</li>
                     </ul>
                 </aside>
                 <div class="research-main scrollable-area">
-                    <!-- The user said "Dreaming 'bout summer 2025" is the first subsection, and Respirar/MegaVortex are subsections of THAT. 
-                         Wait, their previous structure was: 
-                         - Dreaming 'bout summer 2025
-                             - Respirar
-                             - Mega Vortex
-                         Current structure implies Dreaming is the parent. 
-                         I will make "Dreaming..." a header in content and list Respirar/Vortex under it? 
-                         Or maybe "Dreaming..." is the first MAIN item in sidebar?
-                         I'll stick to: Sidebar > Dreaming ... > Sub-items? 
-                         Let's put "Dreaming..." as a section header and the sub-items as specific blocks.
-                    -->
                     <div id="blog-dreaming" class="research-section">
-                        <h3>Dreaming 'bout summer 2025</h3>
+                        <h3>Artistic Blog</h3>
 
                         <div id="blog-respirar" style="margin-top: 20px;">
                             <h4>Respirar</h4>
@@ -293,7 +321,8 @@
                                 </div>
                             </div>
                             <p style="margin-top: 20px; font-style: italic; color: #555; text-align: center;">
-                                "In a world that does not stop moving, we need to remember how to slow down and breath"
+                                "In a world that does not stop moving, we need to remember how to slow down and
+                                breathe."
                             </p>
                         </div>
 
@@ -301,9 +330,10 @@
                             <h4>Mega Vortex</h4>
                             <div style="margin-top: 15px; border-radius: 8px; overflow: hidden;">
                                 <img src="assets/img/mega_vortex.jpg" alt="Mega Vortex"
-                                    style="width: 100%; max-height: 400px; object-fit: cover;">
+                                    style="width: 100%; max-height: 600px; object-fit: cover;">
                             </div>
-                            <p style="margin-top: 10px;">Exploration of the vortex.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #555; text-align: center;">"Inspired
+                                by the mega vortex and by Benjamin Perez Estay."</p>
                         </div>
                     </div>
                 </div>
