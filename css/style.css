@@ -391,12 +391,12 @@ a:hover {
         flex: none !important;
     }
 
-    .hero-text h1 {
-        font-size: 2rem;
+    .hero-content h1 {
+        font-size: 1.6rem !important;
         margin-top: 10px;
     }
 
-    .hero-text h2 {
+    .hero-content p.subtitle {
         font-size: 1.1rem;
     }
 
