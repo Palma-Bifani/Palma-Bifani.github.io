@@ -167,12 +167,30 @@ a:hover {
 
 /* HERO SECTION */
 .hero {
-    height: 80vh;
+    min-height: calc(100vh - var(--nav-height));
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 14% 0 30%;
     position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.hero-icon {
+    flex: 0 0 350px;
 }
 
 .hero h1 {
@@ -358,21 +376,24 @@ a:hover {
     }
 
     /* Home Hero Mobile */
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-        padding: 40px 20px;
-        justify-content: center;
+    .hero {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        gap: 30px !important;
+        justify-content: center !important;
+        height: auto !important;
+        min-height: calc(100vh - var(--nav-height)) !important;
     }
 
-    .hero-text {
-        text-align: center !important;
-        width: 100%;
+    .hero-content {
+        order: 1 !important;
+        width: 100% !important;
+        flex: none !important;
     }
 
     .hero-text h1 {
         font-size: 2rem;
+        margin-top: 10px;
     }
 
     .hero-text h2 {
@@ -380,14 +401,15 @@ a:hover {
     }
 
     .hero-icon {
+        order: 2 !important;
         flex: 0 0 auto !important;
         width: 180px !important;
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
 
-    .btn-container {
-        justify-content: center;
-        gap: 12px;
+    .cta-buttons {
+        justify-content: center !important;
+        gap: 12px !important;
     }
 
     /* Tab Content General */
