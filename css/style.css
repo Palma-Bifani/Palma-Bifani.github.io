@@ -468,18 +468,60 @@ a:hover {
     .research-sidebar h4 {
         text-align: center;
         font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 0 !important;
+        /* Remove margin when collapsed */
+    }
+
+    .research-sidebar h4::after {
+        content: '\f078';
+        /* FontAwesome chevron-down */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 0.8rem;
+        transition: transform 0.3s;
+    }
+
+    .research-sidebar.mobile-expanded h4::after {
+        transform: rotate(180deg);
     }
 
     .research-sidebar hr {
-        margin: 10px auto 20px auto;
-        width: 50px;
+        display: none;
+        /* Hide HR on mobile to save space */
     }
 
     .research-sidebar ul {
-        display: flex;
+        display: none;
+        /* Hide by default */
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
+        padding-top: 20px;
+        animation: fadeInDown 0.3s ease-out;
+    }
+
+    .research-sidebar.mobile-expanded ul {
+        display: flex;
+        /* Show when expanded */
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .research-sidebar li {

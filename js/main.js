@@ -65,6 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mobile Sidebar Toggle Logic
+    const initSidebarToggle = () => {
+        const sidebars = document.querySelectorAll('.research-sidebar');
+        sidebars.forEach(sidebar => {
+            const title = sidebar.querySelector('h4');
+            if (title) {
+                // Remove existing listeners if any (to avoid duplicates)
+                const newTitle = title.cloneNode(true);
+                title.parentNode.replaceChild(newTitle, title);
+
+                newTitle.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        sidebar.classList.toggle('mobile-expanded');
+                    }
+                });
+            }
+        });
+    };
+
+    // Run on load and on resize
+    initSidebarToggle();
+    window.addEventListener('resize', initSidebarToggle);
+
     // Research Sub-navigation
     window.scrollToSub = (id) => {
         const element = document.getElementById(id);
@@ -82,6 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         li.classList.remove('active-sub');
                     }
                 });
+
+                // Auto-collapse on mobile after selection
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('mobile-expanded');
+                }
             }
         }
     };
