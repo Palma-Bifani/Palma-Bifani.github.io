@@ -238,14 +238,34 @@ a:hover {
 .research-layout {
     display: flex;
     gap: 40px;
-    height: 80vh;
-    /* Scrollable within fixed height */
+    height: calc(100vh - var(--nav-height) - 100px);
+    /* Dynamic height for better fit */
+    margin-top: 20px;
 }
 
 .research-sidebar {
     width: 250px;
     border-right: 1px solid var(--glass-border);
     padding-right: 20px;
+    overflow-y: auto;
+    max-height: 100%;
+
+    /* Custom Scrollbar for Sidebar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+}
+
+.research-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.research-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.research-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
 }
 
 .research-sidebar ul {

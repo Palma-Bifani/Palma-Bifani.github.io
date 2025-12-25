@@ -69,7 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollToSub = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            // Scroll the element into view within its scrollable container
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Highlight active sidebar item
+            const sidebar = element.closest('.research-layout')?.querySelector('.research-sidebar');
+            if (sidebar) {
+                sidebar.querySelectorAll('li').forEach(li => {
+                    if (li.getAttribute('onclick')?.includes(`'${id}'`)) {
+                        li.classList.add('active-sub');
+                    } else {
+                        li.classList.remove('active-sub');
+                    }
+                });
+            }
         }
     };
 
@@ -78,19 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeTab = document.querySelector('.tab-content.active-tab');
         if (activeTab) {
             const scrollArea = activeTab.querySelector('.scrollable-area');
-            if (scrollArea) {
-                scrollArea.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+            const sidebar = activeTab.querySelector('.research-sidebar');
+            if (scrollArea) scrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+            if (sidebar) sidebar.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
 
-    // Blog Sub-navigation
-    window.scrollToBlog = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // Blog sub-navigation (using the same unified logic)
+    window.scrollToBlog = window.scrollToSub;
 
     // Publication Year Filter (Simple toggle for now)
     window.filterPubs = (year) => {
