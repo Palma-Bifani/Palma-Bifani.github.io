@@ -536,6 +536,18 @@ a:hover {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
+    .research-sidebar li.sidebar-category-header {
+        flex-basis: 100%;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        text-align: center;
+        font-size: 1rem !important;
+        margin-top: 15px !important;
+        margin-bottom: 5px !important;
+        padding: 5px 0 !important;
+    }
+
     .research-sidebar li::after {
         display: none;
     }
