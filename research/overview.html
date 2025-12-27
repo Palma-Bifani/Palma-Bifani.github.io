@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview | Pauli Palma Bifani</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/research-cards.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Simple Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='../index.html#research'" style="cursor: pointer;">Paulina Palma
+            Bifani</div>
+        <a href="../index.html#research" style="color: white; text-decoration: none; padding: 10px 20px;">
+            <i class="fas fa-arrow-left"></i> Back to Research
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-container">
+        <div class="container" style="max-width: 900px; margin: 0 auto; padding: 80px 40px;">
+
+
+            <!-- Content Section -->
+            <div style="line-height: 1.8; font-size: 1.1rem;">
+                <h2 style="color: var(--accent-color); margin-top: 40px; margin-bottom: 20px;">Known Exoplanets</h2>
+                <p style="margin-bottom: 20px;">
+                    The modern exoplanet era began in 1992 when Aleksander Wolszczan and Dale Frail discovered the first
+                    two exoplanets orbiting the pulsar PSR B1257+12 (Wolszczan & Frail, 1992). Just three years later,
+                    in 1995, Michel Mayor and
+                    Didier Queloz detected 51 Pegasi b, the first exoplanet orbiting a Sun-like star (Mayor & Queloz,
+                    1995). Both discoveries
+                    used indirect methods and revealed systems dramatically different from our Solar System.
+                </p>
+
+                <!-- Direct Imaging Section -->
+                <h3 style="color: var(--accent-color); margin-top: 30px; margin-bottom: 20px;">Direct Imaging Techniques
+                </h3>
+                <div
+                    style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 30px;">
+                    <img src="../assets/img/direct_imaging.png" alt="Direct Imaging"
+                        style="width: 100%; height: auto; display: block;">
+                </div>
+                <p style="margin-bottom: 20px;">
+                    Direct imaging is extraordinarily challenging: host stars are orders of magnitude brighter than
+                    their planets, and planets orbit very close to their stars from our perspective. The angular
+                    resolution limit (θ ≈ 1.22 λ/D) means larger telescopes are essential for resolving smaller
+                    separations.
+                </p>
+
+                <p style="margin-bottom: 20px;">
+                    Modern observations combine three key technologies: <strong>Adaptive Optics (AO)</strong> corrects
+                    atmospheric turbulence to sharpen stellar point-spread functions (Babcock, 1953);
+                    <strong>coronagraphs</strong>
+                    physically block starlight to reduce diffraction (Lyot, 1939); and <strong>post-processing
+                        techniques</strong>
+                    (ADI, RDI, PCA) remove residual speckles (Follette, 2023). Together, these methods improve contrast
+                    by several orders
+                    of magnitude, enabling detection and spectroscopy of faint companions.
+                </p>
+
+                <p style="margin-bottom: 40px;">
+                    Direct imaging matured in 2004 with the first confirmed planetary-mass companion, 2M1207 (Chauvin et
+                    al., 2004). Since then, remarkable systems have been discovered: PDS 70, the youngest system where
+                    two planets have been imaged still in their formation environment (Keppler et al., 2018); HR
+                    8799, a system with four imaged gas giants with well-constrained orbits (Marois et al., 2008;
+                    GRAVITY Collaboration et al., 2019; Wang et al., 2018); β Pic, a system with two planets within a
+                    debris
+                    disk (Lagrange et al., 2010, 2019); 51 Eridani b and AF Leporis b, the lowest-mass wide-orbit
+                    companions (Macintosh et al., 2015; Mesa et al., 2023; Franson et al., 2023); VHS 1256 b, the first
+                    exoplanet where silicate
+                    clouds were observed (Miles et al., 2023); and Eps Ind b, the coldest and oldest directly imaged
+                    exoplanet (Matthews et al., 2024).
+                </p>
+
+                <h3 style="color: var(--accent-color); margin-top: 30px; margin-bottom: 15px;">Current Exoplanet
+                    Population</h3>
+                <p style="margin-bottom: 20px;">
+                    As of October 2024, over 7,300 exoplanets have been confirmed (exoplanet.eu catalog). Each detection
+                    method samples
+                    different regions of parameter space, as shown in the figure below: radial velocity and transits
+                    favor close-in planets, while
+                    direct imaging is sensitive to distant, massive planets. This creates observational biases, the
+                    absence of certain planet types in our data doesn't mean they don't exist, only that we lack the
+                    sensitivity to detect them.
+                </p>
+
+                <!-- Population Figure -->
+                <div
+                    style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 20px;">
+                    <img src="../assets/img/known_exoplanets.png" alt="Known Exoplanets Population"
+                        style="width: 100%; height: auto; display: block;">
+                </div>
+                <p style="font-size: 0.95rem; color: #666; font-style: italic; margin-bottom: 40px;">
+                    Separation versus mass for the entire population of known exoplanets. Panel A shows observational
+                    techniques; Panel B shows planet types classified by mass and orbital distance; Panel C shows system
+                    ages; Panel D shows distances from Earth. (Credit: Data from exoplanet.eu catalog, Schneider,
+                    1995–2024)
+                </p>
+
+                <h3 style="color: var(--accent-color); margin-top: 30px; margin-bottom: 15px;">Spectroscopic
+                    Observations</h3>
+                <p style="margin-bottom: 20px;">
+                    Spectroscopy reveals atmospheric composition and physical properties. In Panel A of the figure
+                    above, all objects highlighted by a black border are those for which we have spectroscopic
+                    information, demonstrating the growing capability to characterize exoplanet atmospheres. Instruments
+                    use Integral Field
+                    Units (IFUs) or slits to capture spatial and spectral information simultaneously. Key facilities
+                    include VLT/SPHERE/IFS (Claudi et al., 2008), VLT/SINFONI (Eisenhauer et al., 2003), JWST/NIRSpec
+                    (Jakobsen et al., 2022), and JWST/MIRI (Rieke et al., 2015), each offering different
+                    trade-offs between wavelength coverage (near to mid-infrared), spectral resolution (low to high),
+                    and
+                    spatial information.
+                </p>
+
+                <p style="margin-bottom: 20px;">
+                    My research focuses on directly imaged exoplanets, using spectroscopy to study their atmospheres and
+                    constrain formation and evolution models. Direct imaging uniquely probes young, massive, widely
+                    separated objects, providing critical insights into planetary system diversity.
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <div style="margin-top: 60px; text-align: center;">
+                <a href="../index.html#research" class="btn-primary"
+                    style="display: inline-block; padding: 12px 30px; background: var(--accent-color); color: white; border-radius: 4px; text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-arrow-left"></i> Back to Research
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

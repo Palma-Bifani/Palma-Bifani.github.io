@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pauli Palma Bifani | Astrophysicist</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/research-cards.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,72 +132,58 @@
 
         <!-- RESEARCH -->
         <section id="research" class="tab-content">
-            <div class="research-layout">
-                <aside class="research-sidebar">
-                    <h4 style="margin-bottom:15px; color:var(--accent-color); cursor: pointer;" onclick="scrollToTop()">
-                        Research</h4>
-                    <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
-                    <ul>
-                        <li class="active-sub" onclick="scrollToSub('res-overview')">Overview</li>
-                        <li onclick="scrollToSub('res-diversity')">Diversity of Planets</li>
-                        <li onclick="scrollToSub('res-imaging')">Direct Imaging</li>
-                        <li onclick="scrollToSub('res-atmos')">Atmospheric Models</li>
-                        <li onclick="scrollToSub('res-formation')">Formation & Evolution</li>
-                        <li onclick="scrollToSub('res-timeline')">Telescope Timeline</li>
-                    </ul>
-                </aside>
-                <div class="research-main scrollable-area">
-                    <div id="res-top" class="research-section">
+            <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 60px 40px;">
+                <h2 style="margin-bottom: 20px;">Research</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 60px; color: #666;">Research on exoplanetary atmospheres and
+                    direct imaging</p>
 
-                        <div id="res-overview" style="margin-top: 20px;">
-                            <h4>Overview</h4>
-                            <div
-                                style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 20px 0;">
-                                <img src="assets/img/known_exoplanets.png" alt="Known Exoplanets"
-                                    style="width: 100%; height: auto; display: block;">
-                            </div>
-                        </div>
+                <!-- Research Cards Grid -->
+                <div class="research-cards-grid">
 
-                        <div id="res-diversity" style="margin-top: 60px;">
-                            <h4>Diversity of Planets</h4>
-                            <div
-                                style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 20px 0;">
-                                <img src="assets/img/diversity.png" alt="Diversity of Planets"
-                                    style="width: 100%; height: auto; display: block;">
-                            </div>
+                    <!-- Known Exoplanets Card -->
+                    <a href="research/overview.html" class="research-card">
+                        <div class="research-card-image">
+                            <img src="assets/img/known_exoplanets.png" alt="Known Exoplanets">
                         </div>
+                        <div class="research-card-content">
+                            <h3>Known Exoplanets</h3>
+                            <p>Understanding the diversity of exoplanetary systems</p>
+                        </div>
+                    </a>
 
-                        <div id="res-imaging" style="margin-top: 60px;">
-                            <h4>Direct Imaging</h4>
-                            <div
-                                style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 20px 0;">
-                                <img src="assets/img/direct_imaging.png" alt="Direct Imaging"
-                                    style="width: 100%; height: auto; display: block;">
-                            </div>
+                    <!-- Atmospheric Models Card -->
+                    <a href="research/atmospheric-models.html" class="research-card">
+                        <div class="research-card-image"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 250px;">
                         </div>
+                        <div class="research-card-content">
+                            <h3>Atmospheric Models</h3>
+                            <p>Modeling exoplanetary atmospheres</p>
+                        </div>
+                    </a>
 
-                        <div id="res-atmos" style="margin-top: 60px;">
-                            <h4>Atmospheric Models</h4>
+                    <!-- Formation & Evolution Card -->
+                    <a href="research/formation.html" class="research-card">
+                        <div class="research-card-image">
+                            <img src="assets/img/formation.png" alt="Formation and Evolution">
                         </div>
+                        <div class="research-card-content">
+                            <h3>Formation & Evolution</h3>
+                            <p>How planets form and evolve over time</p>
+                        </div>
+                    </a>
 
-                        <div id="res-formation" style="margin-top: 60px;">
-                            <h4>Formation and Evolution</h4>
-                            <div
-                                style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 20px 0;">
-                                <img src="assets/img/formation.png" alt="Formation and Evolution"
-                                    style="width: 100%; height: auto; display: block;">
-                            </div>
+                    <!-- Telescope Timeline Card -->
+                    <a href="research/telescope-timeline.html" class="research-card">
+                        <div class="research-card-image">
+                            <img src="assets/img/telescope_timeline.png" alt="Telescope Timeline">
                         </div>
+                        <div class="research-card-content">
+                            <h3>Telescope Timeline</h3>
+                            <p>Evolution of exoplanet observation capabilities</p>
+                        </div>
+                    </a>
 
-                        <div id="res-timeline" style="margin-top: 60px;">
-                            <h4>Telescope Timeline</h4>
-                            <div
-                                style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: 20px 0;">
-                                <img src="assets/img/telescope_timeline.png" alt="Telescope Timeline"
-                                    style="width: 100%; height: auto; display: block;">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
