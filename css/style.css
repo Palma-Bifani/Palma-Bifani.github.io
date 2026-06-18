@@ -340,6 +340,11 @@ a:hover {
     border: 1px solid var(--glass-border);
 }
 
+.bubbles-row {
+    display: flex;
+    gap: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     :root {
@@ -634,6 +639,10 @@ a:hover {
 
     .pub-info h4 {
         font-size: 1.2rem !important;
+    }
+
+    .bubbles-row {
+        flex-direction: column;
     }
 }
 
