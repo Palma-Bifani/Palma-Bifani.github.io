@@ -3,8 +3,8 @@
     /* Clean White */
     --text-color: #1a1a1a;
     /* Dark Grey/Black */
-    --accent-color: #0044cc;
-    /* Deep Scientific Blue */
+    --accent-color: #3e5976;
+    /* Scientific slate-blue from exomoonworld_2 */
     --glass-bg: rgba(0, 0, 0, 0.03);
     /* Subtle dark tint for glass on white */
     --glass-border: rgba(0, 0, 0, 0.1);
@@ -196,7 +196,7 @@ a:hover {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #4a5872, #c77673, #db8658, #e7a869);
+    background: linear-gradient(45deg, #3e5976, #4c6785, #db8658, #e7a869);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,7 +231,7 @@ a:hover {
     background: var(--accent-color);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 68, 204, 0.2);
+    box-shadow: 0 4px 15px rgba(62, 89, 120, 0.25);
 }
 
 /* Research Layout (Sidebar + Content) */
@@ -419,9 +419,9 @@ a:hover {
         font-size: 2.8rem !important;
         margin-top: 10px;
         margin-bottom: 5px;
-        color: #db8658 !important;
+        color: #3e5976 !important;
         /* Solid color to avoid background-clip issues */
-        -webkit-text-fill-color: #db8658 !important;
+        -webkit-text-fill-color: #3e5976 !important;
         background: none !important;
         -webkit-background-clip: border-box !important;
         background-clip: border-box !important;
