@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervision | Pauli Palma Bifani</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/research-cards.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .supervision-header-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 40px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .supervision-legend {
+            font-size: 0.95rem;
+            color: #666;
+            background: rgba(0, 0, 0, 0.02);
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .intern-list {
+            margin-top: 20px;
+        }
+
+        .intern-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--glass-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .intern-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        .intern-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .intern-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .intern-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .badge-scheduled {
+            background: #db8658; /* Warm accent orange */
+        }
+
+        .intern-date {
+            font-size: 0.95rem;
+            color: #666;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .intern-meta {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 12px;
+        }
+
+        .intern-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .intern-meta i {
+            color: var(--accent-color);
+            opacity: 0.8;
+        }
+
+        .intern-project {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .intern-project::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Simple Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='../index.html#research'" style="cursor: pointer;">Paulina Palma
+            Bifani</div>
+        <a href="../index.html#research" style="color: white; text-decoration: none; padding: 10px 20px;">
+            <i class="fas fa-arrow-left"></i> Back to Research
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-container">
+        <div class="container" style="max-width: 900px; margin: 0 auto; padding: 80px 40px;">
+
+            <!-- Header Section -->
+            <div style="line-height: 1.8; font-size: 1.1rem;">
+                <h2 style="color: var(--accent-color); margin-top: 0px; margin-bottom: 20px;">Supervision of Interns</h2>
+                
+                <div class="supervision-legend">
+                    <strong>Legend:</strong> L3: 3rd-year Licence &bull; M1: 1st-year Master &bull; M2: 2nd-year Master
+                </div>
+
+                <!-- Banner Image -->
+                <img src="../assets/img/supervision.png" alt="Supervision and Mentoring Banner" class="supervision-header-img">
+
+                <div class="intern-list">
+                    <!-- Suhani Sondhi -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Suhani Sondhi
+                                <span class="intern-badge">M1</span>
+                                <span class="intern-badge badge-scheduled">Scheduled</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 09/2026 – 12/2026
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> LIRA, Obs. de Paris, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: B. Charnay</span>
+                        </div>
+                        <div class="intern-project">
+                            Continuation of the exploration of the atmospheric properties of the SPHEREx BDs library, work started by Sacha Petit-Jean-Dyck.
+                        </div>
+                    </div>
+
+                    <!-- Pablo Requeijo M2 -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Pablo Requeijo
+                                <span class="intern-badge">M2</span>
+                                <span class="intern-badge badge-scheduled">Scheduled</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 09/2026 – 12/2026
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> LIRA, Obs. de Paris, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: S. Vinatier</span>
+                        </div>
+                        <div class="intern-project">
+                            Inclusion of a transmission spectral modeling option in Optex to model the warm Neptune HIP 67522b in collaboration with the PhD student E. Chabron.
+                        </div>
+                    </div>
+
+                    <!-- Ricardo Garin -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Ricardo Garin
+                                <span class="intern-badge">M2</span>
+                                <span class="intern-badge badge-scheduled">Scheduled</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 09/2026 – 11/2026
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> LIRA, Obs. de Paris, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: B. Charnay</span>
+                        </div>
+                        <div class="intern-project">
+                            Exploration of reflected light spectral features in preparation for ELT/PCS in collaboration with the PhD student A. Radcliffe.
+                        </div>
+                    </div>
+
+                    <!-- Sacha Petit-Jean-Dyck -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Sacha Petit-Jean-Dyck
+                                <span class="intern-badge">L3</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 05/2026 – 07/2026
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> LIRA, Obs. de Paris, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: B. Charnay</span>
+                        </div>
+                        <div class="intern-project">
+                            Atmospheric forward modeling with ForMoSA of the SPHEREx known brown dwarfs dataset from <a href="https://arxiv.org/abs/2604.22012" target="_blank">Gagné et al. (2026)</a>.
+                        </div>
+                    </div>
+
+                    <!-- Pablo Requeijo M1 -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Pablo Requeijo
+                                <span class="intern-badge">M1</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 04/2026 – 07/2026
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> LIRA, Obs. de Paris, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: P. Baudoz</span>
+                        </div>
+                        <div class="intern-project">
+                            Exploration of the performance of ELT/MICADO/LSS for atmospheric analysis. Adaptation of ForMoSA code with co-authorship in <a href="https://arxiv.org/abs/2607.26243" target="_blank">arXiv:2607.26243</a>, and results will be in Palma-Bifani, Requeijo et al. in prep (MICADO LSS paper).
+                        </div>
+                    </div>
+
+                    <!-- Idriss Abdoulwahab -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Idriss Abdoulwahab
+                                <span class="intern-badge">M1</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 06/2024 – 08/2024
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> Laboratoire Lagrange, Nice, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: G. Chauvin</span>
+                        </div>
+                        <div class="intern-project">
+                            Development of <a href="https://github.com/exoAtmospheres/exoSpin" target="_blank"><em>exoSpin</em></a> for the obliquity computation of AB Pic b. Results in <a href="https://arxiv.org/abs/2501.05114" target="_blank"><em>Gandhi et al. (2025)</em></a>.
+                        </div>
+                    </div>
+
+                    <!-- Damien Borja -->
+                    <div class="intern-card">
+                        <div class="intern-header">
+                            <div class="intern-name">
+                                Damien Borja
+                                <span class="intern-badge">M1</span>
+                            </div>
+                            <div class="intern-date">
+                                <i class="far fa-calendar-alt"></i> 06/2023 – 07/2023
+                            </div>
+                        </div>
+                        <div class="intern-meta">
+                            <span><i class="fas fa-university"></i> Laboratoire Lagrange, Nice, France</span>
+                            <span><i class="fas fa-user-friends"></i> Co-sup: G. Chauvin</span>
+                        </div>
+                        <div class="intern-project">
+                            Atmospheric characterization of AF Lep b. Results in <a href="https://www.aanda.org/articles/aa/pdf/2024/03/aa47653-23.pdf" target="_blank"><em>Palma-Bifani et al. (2024)</em></a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div style="margin-top: 60px; text-align: center;">
+                <a href="../index.html#research" class="btn-primary"
+                    style="display: inline-block; padding: 12px 30px; background: var(--accent-color); color: white; border-radius: 4px; text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-arrow-left"></i> Back to Research
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

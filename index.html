@@ -160,6 +160,28 @@
                         </div>
                     </a>
 
+                    <!-- Supervision Card -->
+                    <a href="research/supervision.html" class="research-card">
+                        <div class="research-card-image">
+                            <img src="assets/img/supervision.png" alt="Supervision">
+                        </div>
+                        <div class="research-card-content">
+                            <h3>Supervision</h3>
+                            <p>Guiding the next generation of astrophysicists: mentoring L3, M1, and M2 interns from 2023 to the present.</p>
+                        </div>
+                    </a>
+
+                    <!-- ForMoSA Card -->
+                    <a href="research/formosa.html" class="research-card">
+                        <div class="research-card-image" style="background: #0b1021; display: flex; align-items: center; justify-content: center; padding: 20px;">
+                            <img src="assets/img/ForMoSA.png" alt="ForMoSA" style="max-height: 100%; width: auto; object-fit: contain;">
+                        </div>
+                        <div class="research-card-content">
+                            <h3>ForMoSA</h3>
+                            <p>An open-source Python tool for forward modeling and spectral analysis of directly imaged exoplanets and brown dwarfs.</p>
+                        </div>
+                    </a>
+
                     <!-- Atmospheric Models Card -->
                     <a href="research/atmospheric-models.html" class="research-card" style="display: none;">
                         <div class="research-card-image"
@@ -205,7 +227,8 @@
                         Publications</h4>
                     <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 10px 0 20px 0;">
                     <ul>
-                        <li class="active-sub" onclick="scrollToSub('pub-thesis')">PhD Thesis</li>
+                        <li class="active-sub" onclick="scrollToSub('pub-formosa-2026')">ForMoSA Collaboration (2026)</li>
+                        <li onclick="scrollToSub('pub-thesis')">PhD Thesis</li>
                         <li onclick="scrollToSub('pub-2025')">Palma-Bifani et al. (2025)</li>
                         <li onclick="scrollToSub('pub-2024')">Palma-Bifani et al. (2024)</li>
                         <li onclick="scrollToSub('pub-2023')">Palma-Bifani et al. (2023)</li>
@@ -219,13 +242,32 @@
                                 href="https://ui.adsabs.harvard.edu/public-libraries/aZY9kq11She8riVcy0YJUA"
                                 target="_blank">ADS Library</a></p>
 
-                        <div id="pub-thesis" class="pub-card" style="margin-top: 40px;">
+                        <div id="pub-formosa-2026" class="pub-card" style="margin-top: 40px;">
+                            <div class="pub-thumb">
+                                <img src="assets/img/thumb_palma_bifani_formosa_2026.png" alt="ForMoSA Collaboration 2026 Thumbnail">
+                            </div>
+                            <div class="pub-info">
+                                <h4>ForMoSA: Forward Modeling tool for Spectral Analysis</h4>
+                                <div class="pub-authors">ForMoSA Collaboration (including <strong>S. Petrus</strong>, <strong>P. Palma-Bifani</strong>, <strong>M. Ravet</strong>, <strong>A. Denis</strong>, and <strong>B. Rajpoot</strong> as co-first authors), M. Bonnefoy, G. Chauvin, A. Vigan, A. Radcliffe, P. Requeijo, and K. Hoy</div>
+                                <div class="pub-meta">arXiv preprint arXiv:2607.26243 (2026)</div>
+                                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                                    <a href="https://arxiv.org/abs/2607.26243" target="_blank" class="btn-ads">
+                                        <i class="fas fa-external-link-alt"></i> arXiv
+                                    </a>
+                                    <a href="https://arxiv.org/pdf/2607.26243" target="_blank" class="btn-ads" style="background: var(--text-color);">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pub-thesis" class="pub-card">
                             <div class="pub-thumb">
                                 <img src="assets/img/thumb_thesis.png" alt="PhD Thesis Thumbnail">
                             </div>
                             <div class="pub-info">
                                 <h4>Atmospheric diversity of young exoplanets and brown dwarfs with the VLT and ELT</h4>
-                                <div class="pub-authors">P. Palma-Bifani</div>
+                                <div class="pub-authors">P. Palma-Bifani (Supervisors: G. Chauvin and P. Baudoz)</div>
                                 <div class="pub-meta">PhD Thesis, Université Côte d'Azur, 2025</div>
                                 <a href="https://theses.hal.science/tel-05088034" target="_blank" class="btn-ads">
                                     <i class="fas fa-file-pdf"></i> PDF
@@ -241,8 +283,7 @@
                             <div class="pub-info">
                                 <h4>The planetary-mass-limit VLT/SINFONI library: Spectral extraction and atmospheric
                                     characterization via forward modeling</h4>
-                                <div class="pub-authors">P. Palma-Bifani, M. Bonnefoy, G. Chauvin, P. Rojo, P. Baudoz et
-                                    al.</div>
+                                <div class="pub-authors">P. Palma-Bifani, M. Bonnefoy, G. Chauvin, P. Rojo, P. Baudoz, B. Charnay, A. Denis, K. Hoch, S. Petrus, M. Ravet, A. Simonnin, and A. Vigan</div>
                                 <div class="pub-meta">Astronomy & Astrophysics, Volume 701, A51, 2025</div>
                                 <div style="display: flex; gap: 10px; margin-top: 10px;">
                                     <a href="https://ui.adsabs.harvard.edu/abs/2025A&A...701A..51P/abstract"
@@ -264,8 +305,7 @@
                             </div>
                             <div class="pub-info">
                                 <h4>Atmospheric properties of AF Lep b with forward modeling</h4>
-                                <div class="pub-authors">P. Palma-Bifani, G. Chauvin, D. Borja, M. Bonnefoy, S. Petrus
-                                    et al.</div>
+                                <div class="pub-authors">P. Palma-Bifani, G. Chauvin, D. Borja, M. Bonnefoy, S. Petrus, D. Mesa, R. J. De Rosa, R. Gratton, P. Baudoz, A. Boccaletti, B. Charnay, C. Desgrange, P. Tremblin, and A. Vigan</div>
                                 <div class="pub-meta">Astronomy & Astrophysics, Volume 683, A214, 2024</div>
                                 <a href="https://ui.adsabs.harvard.edu/abs/2024A&A...683A.214P/abstract" target="_blank"
                                     class="btn-ads">
@@ -282,8 +322,7 @@
                             <div class="pub-info">
                                 <h4>Peering into the Young Planetary System AB Pic. Atmosphere, Orbit, Obliquity &
                                     Second Planetary Candidate</h4>
-                                <div class="pub-authors">P. Palma-Bifani, G. Chauvin, M. Bonnefoy, P. M. Rojo, S. Petrus
-                                    et al.</div>
+                                <div class="pub-authors">P. Palma-Bifani, G. Chauvin, M. Bonnefoy, P. M. Rojo, S. Petrus, L. Rodet, M. Langlois, F. Allard, B. Charnay, C. Desgrange, D. Homeier, A.-M. Lagrange, J.-L. Beuzit, P. Baudoz, A. Boccaletti, A. Chomez, P. Delorme, S. Desidera, M. Feldt, C. Ginski, R. Gratton, A.-L. Maire, M. Meyer, M. Samland, I. Snellen, A. Vigan, and Y. Zhang</div>
                                 <div class="pub-meta">Astronomy & Astrophysics, Volume 670, A90, 2023</div>
                                 <a href="https://ui.adsabs.harvard.edu/abs/2023A&A...670A..90P/abstract" target="_blank"
                                     class="btn-ads">
@@ -298,7 +337,7 @@
                             </div>
                             <div class="pub-info">
                                 <h4>MICADO spectroscopic mode for exoplanet characterization</h4>
-                                <div class="pub-authors">P. Palma-Bifani, P. Baudoz, E. Huby and G. Chauvin</div>
+                                <div class="pub-authors">P. Palma-Bifani, P. Baudoz, E. Huby, and G. Chauvin</div>
                                 <div class="pub-meta">SF2A-2023: Proceedings of the meeting of the SF2A, 2023</div>
                                 <a href="https://ui.adsabs.harvard.edu/abs/2023sf2a.conf..239P/abstract" target="_blank"
                                     class="btn-ads">
@@ -314,7 +353,7 @@
                             <div class="pub-info">
                                 <h4>Atmospheres of objects on the upper planetary-mass limit as a clue to
                                     distinguish between formation mechanisms</h4>
-                                <div class="pub-authors">P. Palma-Bifani</div>
+                                <div class="pub-authors">P. Palma-Bifani (Supervisors: P. Rojo, G. Chauvin, and M. Bonnefoy)</div>
                                 <div class="pub-meta">MSc Thesis, Universidad de Chile, 2021</div>
                                 <a href="https://repositorio.uchile.cl/handle/2250/184591" target="_blank"
                                     class="btn-ads">
@@ -712,7 +751,7 @@
                         <li class="sidebar-category-header"
                             style="color: var(--accent-color); font-weight: 600; margin-top: 15px; cursor: pointer;"
                             onclick="scrollToSub('blog-own-productions')">Own productions</li>
-                        <li onclick="scrollToSub('blog-cd-35-2722')">The CD-35 2722 system</li>
+                        <li onclick="scrollToSub('blog-cd-35-2722')">CD-35 2722</li>
                         <li onclick="scrollToSub('blog-ngc6302')">NGC 6302</li>
                         <li onclick="scrollToSub('blog-exomoonworld-2')">A young massive Jupiter</li>
                         <li onclick="scrollToSub('blog-bubbles')">Bubbles</li>
@@ -733,9 +772,9 @@
                             <h3 style="margin-top: 10px;">Own productions</h3>
                         </div>
 
-                        <!-- The CD-35 2722 system -->
+                        <!-- CD-35 2722 -->
                         <div id="blog-cd-35-2722" style="margin-top: 40px;">
-                            <h4>The CD-35 2722 system</h4>
+                            <h4>CD-35 2722</h4>
                             <div
                                 style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-top: 25px; border: 1px solid var(--glass-border);">
                                 <img src="assets/img/CD-35_2722.jpeg" alt="The CD-35 2722 system"

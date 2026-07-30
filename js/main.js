@@ -138,4 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // For MVP, just alerting or assume logic matches button text
     };
 
+    // Hash routing for direct tab activation
+    const handleHashTabs = () => {
+        const hash = window.location.hash.substring(1);
+        const validTabs = ['home', 'cv', 'research', 'publications', 'scientific-blog', 'blog', 'contact'];
+        if (hash && validTabs.includes(hash)) {
+            window.switchTab(hash);
+        }
+    };
+    handleHashTabs();
+    window.addEventListener('hashchange', handleHashTabs);
+
 });
